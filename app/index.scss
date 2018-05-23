@@ -1,0 +1,30 @@
+
+$button_color:#27f55d;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+  .wd100{
+    width: 100px;
+  }
+
+  .wd600{
+    width: 600px;
+  }
+
+  button{
+    border-radius: 5px;
+    background-color: $button_color;
+    border: none;
+    padding: 3px 10px;
+    color: #fffaf2;
+    font-weight: bold;
+    &:hover{
+      cursor: pointer;
+      background-color: darken($button_color, 8%);
+      box-shadow: #fffaf2;
+    }
+  }
+}
