@@ -1,11 +1,12 @@
+@import "bower_components/mui/src/sass/mui/colors";
 
 $button_color:#27f55d;
+$primary_color:#56ff00;
 
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-
   .wd100{
     width: 100px;
   }
@@ -14,7 +15,7 @@ body {
     width: 600px;
   }
 
-  button{
+  button, .phaitonious-btn{
     border-radius: 5px;
     background-color: $button_color;
     border: none;
@@ -25,6 +26,21 @@ body {
       cursor: pointer;
       background-color: darken($button_color, 8%);
       box-shadow: #fffaf2;
+    }
+  }
+
+  // input style
+  .mui-textfield{
+    &.mui-textfield--float-label{
+      input:focus {
+        border-color: $primary_color;
+        .textarea:focus ~ label{
+          color:$primary_color;
+        }
+      }
+      input:focus ~ label{
+        color:$primary_color;
+      }
     }
   }
 }

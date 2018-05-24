@@ -42,6 +42,7 @@ module.exports = {
       './app/index.js',
       './app/index.scss',
       './app/bootstrap/css/bootstrap.min.css',
+      './app/css/mui.min.css',
     ],
   },
   output: {
